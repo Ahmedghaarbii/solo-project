@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.wrapper{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.7);
+}
+
+.wrapper header{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #706162;
+    text-align: center;
+}
+
+.wrapper p{
+    margin: 0;
+    padding: 0;
+    color: #ff4646;
+    font-weight: bold;
+}
+
+#signup{
+    color: #706162;
+}
+
+.wrapper a{
+    margin: 0;
+    padding: 0;
+    color: #ff4646;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wrapper input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrapper input[type="text"]:focus, input[type="password"]:focus{
+    border-bottom: 3px solid #706162;
+}
+
+.wrapper input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 3px solid #e40017;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.wrapper button{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.wrapper button:hover{
+    cursor: pointer;
+    background: #706162;
+    color: #fff;
+}

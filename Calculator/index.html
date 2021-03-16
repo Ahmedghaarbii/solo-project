@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="favicon.png" type="image/icon type">
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+
+    <div class="calc">
+            <input id='display' class="viewer">
+        <table>
+            <tr>
+                <td colspan="3"><input id="clear" type="button" value="AC" onclick="document.getElementById('display').value = ''" style="width: 270px;"></td>
+                <td><input id="divided" type="button" value="/" onclick="insrt('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="insrt(7)"></td>
+                <td><input type="button" value="8" onclick="insrt(8)"></td>
+                <td><input type="button" value="9" onclick="insrt(9)"></td>
+                <td><input id="times" type="button" value="*" onclick="insrt('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="insrt(4)"></td>
+                <td><input type="button" value="5" onclick="insrt(5)"></td>
+                <td><input type="button" value="6" onclick="insrt(6)"></td>
+                <td><input id="minus" type="button" value="-" onclick="insrt('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="insrt(1)"></td>
+                <td><input type="button" value="2" onclick="insrt(2)"></td>
+                <td><input type="button" value="3" onclick="insrt(3)"></td>
+                <td><input id="plus" type="button" value="+" onclick="insrt('+')"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0 " onclick="insrt(0)" style="border-radius: 50px; width: 180px;"></td>
+                <td><input type="button" value="," onclick="insrt(',')"></td>
+                <td><input id="equals" type="button" value="=" onclick="eql()"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
